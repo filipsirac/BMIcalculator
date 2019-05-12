@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".activity.MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/heightTextView"
+            android:text="@string/enter_your_height"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSizeET"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/marginET"
+    />
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/heightEditText"
+            android:hint="@string/meters"
+            android:textSize="@dimen/textSizeET"
+            android:digits="0123456789."
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heightTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/marginET"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weightTextView"
+            android:text="@string/enter_your_weight"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSizeET"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heightEditText"
+            android:layout_margin="@dimen/marginET"
+    />
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weightEditText"
+            android:hint="@string/kilograms"
+            android:textSize="@dimen/textSizeET"
+            android:digits="0123456789."
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weightTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/marginET"
+    />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            android:textSize="@dimen/textSizeET"
+            android:id="@+id/calculateButton"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorText"
+            android:layout_margin="@dimen/marginET"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weightEditText"
+    />
+
+    <ImageView
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:id="@+id/image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculatedBMI"
+            android:textSize="@dimen/textSizeET"
+            android:layout_marginTop="@dimen/marginET"
+            android:textColor="@color/colorText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/calculateButton"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculatedBMIName"
+            android:layout_marginTop="@dimen/marginET"
+            android:textSize="@dimen/textSizeET"
+            android:textColor="@color/colorText"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/calculatedBMI"
+    />
+
+    <TextView
+            android:layout_width="@dimen/description_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculatedBMIDescription"
+            android:layout_marginTop="@dimen/margin_top_description"
+            android:textSize="@dimen/description_text_size"
+            android:textColor="@color/colorText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/calculatedBMIName"
+    />
+
+</android.support.constraint.ConstraintLayout>

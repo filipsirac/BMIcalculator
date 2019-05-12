@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">BMIcalculator</string>
+    <string name="underweight_title">underweight</string>
+    <string name="normal_title">normal</string>
+    <string name="overweight_title">overweight</string>
+    <string name="obese_title">obese</string>
+    <string name="invalid_entry">Invalid entry.</string>
+
+
+    //underweight
+    <string name="underweight">
+        A BMI of less than 18.5 indicates that you are underweight, so you may need to put on some weight. You are recommended to ask your doctor or a dietitian for advice.
+    </string>
+
+    //normal
+    <string name="normal">
+        A BMI of 18.5-24.9 indicates that you are at a healthy weight for your height. By maintaining a healthy weight, you lower your risk of developing serious health problems.
+    </string>
+
+    //overweight
+    <string name="overweight">
+        A BMI of 25-29.9 indicates that you are slightly overweight. You may be advised to lose some weight for health reasons. You are recommended to talk to your doctor or a dietitian for advice.
+    </string>
+
+    //obese
+    <string name="obese">
+        A BMI of over 30 indicates that you are heavily overweight. Your health may be at risk if you do not lose weight. You are recommended to talk to your doctor or a dietitian for advice.
+    </string>
+    <string name="enter_your_height">Enter your height:</string>
+    <string name="meters">meters</string>
+    <string name="enter_your_weight">Enter your weight:</string>
+    <string name="kilograms">kilograms</string>
+    <string name="calculate">Calculate</string>
+
+</resources>
